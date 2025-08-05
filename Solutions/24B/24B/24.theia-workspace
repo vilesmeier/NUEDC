@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "file:///c%3A/Users/50803/workspace_ccstheia"
+    },
+    {
+      "path": "file:///d%3A/OneDrive%20-%20mail.sdu.edu.cn/Codes/TMS320F28335/24"
+    }
+  ],
+"settings": {},
+"launch": {
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "24_competition",
+            "type": "ccs-debug",
+            "request": "launch",
+            "project": "24_competition"
+        }
+    ]
+}
+}

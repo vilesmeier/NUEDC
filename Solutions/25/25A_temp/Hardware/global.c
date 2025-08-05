@@ -1,0 +1,20 @@
+#include "global.h"
+
+//PR
+PR pr_vol_A,pr_vol_B,pr_vol_C, pr_VC_A,pr_VC_B,pr_VC_C;
+
+//RAMP
+RAMP ramp;
+
+//STATE
+STATE state;
+
+//RMS
+RMS rms_A,rms_B,rms_C;
+
+//SVPWM
+SVPWM svpwm;
+
+
+
+

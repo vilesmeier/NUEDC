@@ -1,0 +1,24 @@
+# git ignore files
+
+# files
+**/Previous/
+**/Video/
+
+# vscode work space floder
+**/.vscode/
+
+# LC EDA backup floder
+**/*_backup/
+
+# CCS workspace floder
+**/.metadata/
+**/RemoteSystemsTempFiles/
+**/.jxbrowser.userdata/
+**/dvt/
+**/.launches/
+**/.settings/
+**/Release/
+**/Debug/
+
+# SYNC settings
+*.ffs_gui
