@@ -9,4 +9,6 @@
 	<templateProperties value="id=empty_driverlib_project.projectspec.Test"/>
 	<origin value="D:\CCS_TI_Tools\C2000Ware_5_05_00_00\driverlib\f2837xd\examples\cpu1\empty_projects\CCS\empty_driverlib_project.projectspec"/>
 	<filesToOpen value=""/>
+	<activeTargetConfiguration value="targetConfigs/TMS320F28377D.ccxml"/>
+	<isTargetConfigurationManual value="true"/>
 </projectOptions>
