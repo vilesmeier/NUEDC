@@ -22,3 +22,6 @@
 
 # SYNC settings
 *.ffs_gui
+
+# Personal information related
+**/.Ìá½»²ÄÁÏ/
