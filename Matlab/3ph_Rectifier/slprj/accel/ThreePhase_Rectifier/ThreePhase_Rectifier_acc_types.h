@@ -1,9 +1,0 @@
-#ifndef ThreePhase_Rectifier_acc_types_h_
-#define ThreePhase_Rectifier_acc_types_h_
-typedef struct P_RMS_ThreePhase_Rectifier_T_ P_RMS_ThreePhase_Rectifier_T ;
-typedef struct P_TrueRMS_ThreePhase_Rectifier_T_
-P_TrueRMS_ThreePhase_Rectifier_T ; typedef struct
-P_RMS_ThreePhase_Rectifier_f_T_ P_RMS_ThreePhase_Rectifier_f_T ; typedef
-struct P_TrueRMS_ThreePhase_Rectifier_d_T_ P_TrueRMS_ThreePhase_Rectifier_d_T
-; typedef struct P_ThreePhase_Rectifier_T_ P_ThreePhase_Rectifier_T ;
-#endif
