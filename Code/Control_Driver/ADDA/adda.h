@@ -37,9 +37,9 @@
 #define MIDIUM_Z    2
 
 //Hardware driver for SPIa
-void SPI_Init(void);
-Uint16 SPI_SwitchByte(Uint16 data);
-void SPI_Reset(void);
+extern void SPI_Init(void);
+extern Uint16 SPI_SwitchByte(Uint16 data);
+extern void SPI_Reset(void);
 
 //device control
 void ADDA_Init(void);

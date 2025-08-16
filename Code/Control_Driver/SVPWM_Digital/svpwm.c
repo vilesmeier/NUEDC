@@ -42,9 +42,4 @@ void SVPWM_Run(SVPWM* svpwm, float Ua, float Uc)
     svpwm->Ua = svpwm->Ua + (svpwm->offset-svpwm->max-svpwm->min)*0.5f;
     svpwm->Ub = svpwm->Ub + (svpwm->offset-svpwm->max-svpwm->min)*0.5f;
     svpwm->Uc = svpwm->Uc + (svpwm->offset-svpwm->max-svpwm->min)*0.5f;
-
-    // output PWM COMP value
-    EPwm1Regs.CMPA.half.CMPA = 3750 * (svpwm->Ua);
-    EPwm2Regs.CMPA.half.CMPA = 3750 * (svpwm->Ub);
-    EPwm3Regs.CMPA.half.CMPA = 3750 * (svpwm->Uc);
 }
