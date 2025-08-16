@@ -33,8 +33,11 @@ typedef struct UART_DATA_3Ch
     Uint8 send_float[16];
 }UART_DATA_3Ch;
 
+// Peripheral Driver Lib function
 extern void UART_SendChar(Uint8 send);
+extern SCI_writeCharArray(uint32_t base, const uint16_t * const array, uint16_t length);
 
+// VOFA support
 void VOFA_Init(void);
 void VOFA_1Ch_ShowFloat(float data);
 void VOFA_2Ch_ShowFloat(float data1, float data2);

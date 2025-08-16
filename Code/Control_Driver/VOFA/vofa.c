@@ -35,6 +35,7 @@ void VOFA_Init(void)
     cmd_ch3.send_float[15] = 0x7f;
 }
 
+// VOFA Support for TMS320F28335
 #if DSP28_28335
 /**
  * @brief send one float to VOFA by Justfloat protocol
@@ -110,3 +111,84 @@ void VOFA_3Ch_ShowFloat(float data1, float data2, float data3)
 }
 #endif // DSP28_28335
 
+// VOFA Support for TMS320F28379D
+#ifdef DSP28_28379D
+/**
+ * @brief send one float to VOFA by Justfloat protocol
+ * 
+ * @param data transmit data
+ */
+void VOFA_1Ch_ShowFloat(float data)
+{
+    cmd_ch1.data.data = data;
+    cmd_ch1.send_float[0] = cmd_ch1.data.dat[0];
+    cmd_ch1.send_float[1] = (cmd_ch1.data.dat[0]>>8);
+    cmd_ch1.send_float[2] = cmd_ch1.data.dat[1];
+    cmd_ch1.send_float[3] = (cmd_ch1.data.dat[1]>>8);
+
+
+    SCI_writeCharArray(SCIA_BASE,cmd_ch1.send_float,8);
+
+}
+
+/**
+ * @brief send two float to VOFA by Justfloat protocol
+ * 
+ * @param data1 transmit data 1
+ * @param data2 transmit data 2
+ */
+void VOFA_2Ch_ShowFloat(float data1, float data2)
+{
+    cmd_ch2.data1.data = data1;
+    cmd_ch2.data2.data = data2;
+
+    cmd_ch2.send_float[0] = cmd_ch2.data1.dat[0];
+    cmd_ch2.send_float[1] = (cmd_ch2.data1.dat[0]>>8);
+    cmd_ch2.send_float[2] = cmd_ch2.data1.dat[1];
+    cmd_ch2.send_float[3] = (cmd_ch2.data1.dat[1]>>8);
+
+    cmd_ch2.send_float[4] = cmd_ch2.data2.dat[0];
+    cmd_ch2.send_float[5] = (cmd_ch2.data2.dat[0]>>8);
+    cmd_ch2.send_float[6] = cmd_ch2.data2.dat[1];
+    cmd_ch2.send_float[7] = (cmd_ch2.data2.dat[1]>>8);
+
+    SCI_writeCharArray(SCIA_BASE,cmd_ch1.send_float,8);
+}
+
+/**
+ * @brief send two float to VOFA by Justfloat protocol
+ * 
+ * @param data1 transmit data 1
+ * @param data2 transmit data 2
+ * @param data3 transmit data 3
+ */
+void VOFA_3Ch_ShowFloat(float data1, float data2, float data3)
+{
+    cmd_ch3.data1.data = data1;
+    cmd_ch3.data2.data = data2;
+    cmd_ch3.data3.data = data3;
+
+    cmd_ch3.send_float[0] = cmd_ch3.data1.dat[0];
+    cmd_ch3.send_float[1] = (cmd_ch3.data1.dat[0]>>8);
+    cmd_ch3.send_float[2] = cmd_ch3.data1.dat[1];
+    cmd_ch3.send_float[3] = (cmd_ch3.data1.dat[1]>>8);
+
+    cmd_ch3.send_float[4] = cmd_ch3.data2.dat[0];
+    cmd_ch3.send_float[5] = (cmd_ch3.data2.dat[0]>>8);
+    cmd_ch3.send_float[6] = cmd_ch3.data2.dat[1];
+    cmd_ch3.send_float[7] = (cmd_ch3.data2.dat[1]>>8);
+
+    cmd_ch3.send_float[8] = cmd_ch3.data3.dat[0];
+    cmd_ch3.send_float[9] = (cmd_ch3.data3.dat[0]>>8);
+    cmd_ch3.send_float[10] = cmd_ch3.data3.dat[1];
+    cmd_ch3.send_float[11] = (cmd_ch3.data3.dat[1]>>8);
+
+    SCI_writeCharArray(SCIA_BASE,cmd_ch1.send_float,8);
+}
+
+#endif // DSP28_28379D
+
+// VOFA Support for TMS320F280049C
+#ifdef DSP28_280049C
+
+#endif // DSP28_280049C
