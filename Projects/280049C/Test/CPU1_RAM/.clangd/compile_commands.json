@@ -1,0 +1,27 @@
+[
+   {
+      "directory" : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM",
+      "command"   : "clang++ -I\"D:/NUEDC/Projects/280049C/Test\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00\" -I\"D:/NUEDC/Projects/280049C/Test/device\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00/driverlib/f28004x/driverlib/\" -I\"D:/CCS_TI_Tools/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -DDEBUG -I\"D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "D:/NUEDC/Projects/280049C/Test/device/device.c"
+   },
+   {
+      "directory" : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM",
+      "command"   : "clang++ -I\"D:/NUEDC/Projects/280049C/Test\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00\" -I\"D:/NUEDC/Projects/280049C/Test/device\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00/driverlib/f28004x/driverlib/\" -I\"D:/CCS_TI_Tools/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -DDEBUG -I\"D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg\" -DF28004x=1",
+      "file"      : "D:/NUEDC/Projects/280049C/Test/device/f28004x_codestartbranch.asm"
+   },
+   {
+      "directory" : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM",
+      "command"   : "clang++ -I\"D:/NUEDC/Projects/280049C/Test\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00\" -I\"D:/NUEDC/Projects/280049C/Test/device\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00/driverlib/f28004x/driverlib/\" -I\"D:/CCS_TI_Tools/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -DDEBUG -I\"D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "D:/NUEDC/Projects/280049C/Test/empty_driverlib_main.c"
+   },
+   {
+      "directory" : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM",
+      "command"   : "clang++ -I\"D:/NUEDC/Projects/280049C/Test\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00\" -I\"D:/NUEDC/Projects/280049C/Test/device\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00/driverlib/f28004x/driverlib/\" -I\"D:/CCS_TI_Tools/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -DDEBUG -I\"D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg/board.c"
+   },
+   {
+      "directory" : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM",
+      "command"   : "clang++ -I\"D:/NUEDC/Projects/280049C/Test\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00\" -I\"D:/NUEDC/Projects/280049C/Test/device\" -I\"D:/CCS_TI_Tools/C2000Ware_5_05_00_00/driverlib/f28004x/driverlib/\" -I\"D:/CCS_TI_Tools/ccs2020/ccs/tools/compiler/ti-cgt-c2000_22.6.2.LTS/include\" -DDEBUG -I\"D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "D:/NUEDC/Projects/280049C/Test/CPU1_RAM/syscfg/c2000ware_libraries.c"
+   }
+]
