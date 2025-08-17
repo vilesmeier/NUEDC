@@ -1,7 +1,6 @@
 # NUEDC  
-
 2025全国大学生电子设计竞赛备赛资料  
-赛题方向：电力电子（电源）  
+备赛方向：电力电子（电源）  
 
 本仓库内资料全部开源,并**遵循开源协议GPL-V3**  
 **使用本仓库内代码造成的后果,本人概不负责**  
@@ -13,57 +12,57 @@
 ***山东大学电工电子创新教育平台***  
 
 ## 开发环境
-
-软件部分：  
-TMS320F28335  
+### 软件
+#### TMS320F28335
 CCS12.4  
 C2000Ware_5_00_00_00  
 C2000Ware_DigitalPower_SDK_5_02_00_00  
 C2000Ware_MotorControl_SDK_5_02_00_00  
 
-硬件部分：  
+#### TMS320F28379D/TMS320F280049C
+CCS20.20  
+C2000Ware_5_05_00_00  
+C2000Ware_DigitalPower_SDK_5_05_00_00  
+C2000Ware_MotorControl_SDK_5_04_00_00 
+
+### 硬件  
 嘉立创EDA Pro  
 
-仿真部分：  
+### 仿真  
 Matlab2024a  
 PLECS 4.7  
 Multisim14  
 
-## /Code  
-
-模块化功能代码  
-控制环路：PID、PR、Transform、MPPT、PLL、SVPWM  
-信号处理：RMS、FFT、PowerAnalyzer  
-片内外设：ADC、PWM、CAP、SPI、IIC、UART、XINT、GPIO  
-片外外设：OLED（0.96'）、TFT（1.8'）、ADDA、继电器、键盘  
-通用文件：state、global  
-
-## /DataSheet  
-
-所用芯片的数据手册、DSP的数据手册、用户手册  
-
-## /Matlab  
-
-Matlab Simulink数字环路仿真  
-Matlab还支持对C2000的MBD（module based development，基于模型的开发），还能搞代码生成，据说能做到一行代码不写速通电赛。**整明白的大佬可以教教我，我反正不会**  
-
-## /Multisim 
-
-Multisim 模拟环路仿真  
-
-## /PCB  
-
-硬件PCB工程  
-单相/三相H桥、采样、FSBB、UCC28180-PFC、无控整流、ACAC  
-
-## /Question  
-
-全国大学生设计竞赛往年赛题、电源题汇总、往年赛题分类  
-
-## /Reference  
-
-相关参考资料、部分芯片的设计工具、设计参考手册  
-
-## /Solutions  
-
-往年赛题的完整题解（软件部分），硬件模块见 /PCB 文件夹  
+## 文件夹说明
+``` 
+NUEDC                           根目录
+├── Code                        模块化代码
+│   ├── Control_Driver          控制环路代码
+│   └── Peripheral_Driver       DSP硬件层代码
+│       ├── 28335               TMS320F28335硬件驱动
+│       ├── 28379D              TMS320F28379D硬件驱动
+│       └── 280049C             TMS320F280049C硬件驱动
+├── DataSheet                   数据手册
+│   ├── TMS320F28335            TMS320F28335相关手册、核心板资料
+│   ├── TMS320F28379D           TMS320F28379D相关手册、核心板资料
+│   ├── TMS320F280049C          TMS320F280049C相关手册、核心板资料
+│   ├── 实验室仪器               实验室仪器说明书
+│   └── 芯片                    所用器件的数据手册
+├── Matlab                      Matlab-Simulink仿真
+├── Multisim                    Multisim模拟回路仿真
+├── PCB                         PCB工程
+│   ├── Library                 嘉立创自建库
+│   ├── unuse_projects          优化前旧工程
+│   └── projects                优化后新工程
+├── PLECS                       PLECS变流器仿真
+├── Projects                    代码工程
+│   ├── 28335                   28335主控
+│   ├── 28379D                  28379D主控
+│   └── 280049C                 280049C主控
+├── Question                    电子设计竞赛历年真题及综合测评真题
+└── Reference                   参考资料
+    ├── Related Articles        相关论文
+    ├── 设计工具                TI芯片设计工具
+    ├── 设计手册                TI相关设计手册
+    └── 综合测评资料            综合测评用参考资料
+```
