@@ -41,6 +41,7 @@ C2000Ware_MotorControl_SDK_5_04_00_00
 
 ### 硬件  
 嘉立创EDA Pro  
+Altium Designer 24
 
 ### 仿真  
 Matlab2024a  
@@ -63,13 +64,13 @@ NUEDC                           根目录
 │   ├── 实验室仪器               实验室仪器说明书
 │   └── 芯片                    所用器件的数据手册
 ├── Matlab                      Matlab-Simulink仿真
-├── Multisim                    Multisim模拟回路仿真
+├── Multisim                    Multisim仿真
 ├── PCB                         PCB工程
 │   ├── AD_Library              AD24环境下库文件
 │   ├── LCDEA_Library           嘉立创自建库
 │   ├── LCDEA_Unuse_Projects    优化前旧工程
 │   └── LCDEA_Projects          优化后新工程
-├── PLECS                       PLECS变流器仿真
+├── PLECS                       PLECS仿真
 ├── Projects                    代码工程
 │   ├── 28335                   28335主控
 │   ├── 28379D                  28379D主控
