@@ -65,9 +65,10 @@ NUEDC                           根目录
 ├── Matlab                      Matlab-Simulink仿真
 ├── Multisim                    Multisim模拟回路仿真
 ├── PCB                         PCB工程
-│   ├── Library                 嘉立创自建库
-│   ├── unuse_projects          优化前旧工程
-│   └── projects                优化后新工程
+│   ├── AD_Library              AD24环境下库文件
+│   ├── LCDEA_Library           嘉立创自建库
+│   ├── LCDEA_Unuse_Projects    优化前旧工程
+│   └── LCDEA_Projects          优化后新工程
 ├── PLECS                       PLECS变流器仿真
 ├── Projects                    代码工程
 │   ├── 28335                   28335主控
@@ -79,6 +80,7 @@ NUEDC                           根目录
     ├── 设计工具                TI芯片设计工具
     ├── 设计手册                TI相关设计手册
     └── 综合测评资料            综合测评用参考资料
+    
 ```
 ## Later Updates
 后续更新将不再使用TMS320F28335作为主控  
